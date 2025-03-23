@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">DevPortfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Your Name</h1>
+                <p>Full-stack developer specialized in building exceptional digital experiences that are fast, accessible, and responsive.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#" class="btn btn-secondary">Download Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <p>Your Photo Here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Passionate about creating elegant solutions to complex problems</p>
+
+            <div class="about-content">
+                <div class="about-item">
+                    <h3>My Journey</h3>
+                    <p>I began my coding journey when I discovered my passion for creating software that solves real-world problems. What started as a hobby quickly grew into a career as I continued to expand my skillset and tackle increasingly complex challenges.</p>
+                    <p>Throughout my career, I've worked on a variety of projects ranging from small business websites to large-scale enterprise applications. Each project has taught me valuable lessons about software development, teamwork, and problem-solving.</p>
+                </div>
+
+                <div class="about-item">
+                    <h3>Education & Experience</h3>
+                    <div class="timeline-item">
+                        <h4>Senior Developer @ Tech Company</h4>
+                        <p class="timeline-date">2020 - Present</p>
+                        <p>Leading development of key projects and mentoring junior developers.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Frontend Developer @ Startup</h4>
+                        <p class="timeline-date">2018 - 2020</p>
+                        <p>Built responsive web applications using modern JavaScript.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Computer Science Degree</h4>
+                        <p class="timeline-date">2014 - 2018</p>
+                        <p>University of Technology, Specialization in Software Engineering</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="what-i-do">
+                <h3>What I Do</h3>
+                <p>I specialize in building modern web applications using HTML, CSS, and JavaScript. My focus is on creating fast, accessible, and responsive user interfaces that provide a great user experience. I'm also experienced in backend development with Node.js, Express, and various databases.</p>
+                <p>Beyond coding, I enjoy sharing my knowledge with others through mentoring, writing technical articles, and contributing to open-source projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">A showcase of my recent development work</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Screenshot</div>
+                    </div>
+                    <div class="project-details">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce platform with payment processing, user authentication, and product management.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Screenshot</div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Task Management App</h3>
+                        <p>A Kanban-style task management application with drag-and-drop functionality and team collaboration features.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                            <span>Drag & Drop API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Screenshot</div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Weather Dashboard</h3>
+                        <p>A weather application that displays current conditions and forecasts for locations worldwide using weather API data.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Weather API</span>
+                            <span>Geolocation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Screenshot</div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Social Media Dashboard</h3>
+                        <p>An analytics dashboard for tracking social media metrics across multiple platforms with data visualization.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-footer">
+                <a href="#" class="btn btn-secondary">View More Projects on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">The tools, technologies, and skillsets I use to bring projects to life</p>
+
+            <div class="skills-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                    <button class="tab-btn" data-tab="backend">Backend</button>
+                    <button class="tab-btn" data-tab="tools">Tools & Others</button>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="frontend-panel">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">H</div>
+                                <div class="skill-name">HTML5</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">C</div>
+                                <div class="skill-name">CSS3</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">J</div>
+                                <div class="skill-name">JavaScript</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">T</div>
+                                <div class="skill-name">TypeScript</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">R</div>
+                                <div class="skill-name">React</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">V</div>
+                                <div class="skill-name">Vue.js</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">S</div>
+                                <div class="skill-name">SASS</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">B</div>
+                                <div class="skill-name">Bootstrap</div>
+                            </div>
+                        </div>
+                        <div class="tab-description">
+                            <h3>Frontend Development</h3>
+                            <p>I create responsive, accessible, and performant user interfaces using modern web technologies. My approach focuses on writing clean, maintainable code that delivers exceptional user experiences.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="backend-panel">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">N</div>
+                                <div class="skill-name">Node.js</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">E</div>
+                                <div class="skill-name">Express</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">P</div>
+                                <div class="skill-name">PHP</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">M</div>
+                                <div class="skill-name">MongoDB</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">S</div>
+                                <div class="skill-name">SQL</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">F</div>
+                                <div class="skill-name">Firebase</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">G</div>
+                                <div class="skill-name">GraphQL</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">R</div>
+                                <div class="skill-name">REST APIs</div>
+                            </div>
+                        </div>
+                        <div class="tab-description">
+                            <h3>Backend Development</h3>
+                            <p>I build scalable, secure, and efficient backend systems that power web applications. My experience includes designing APIs, working with various databases, and implementing authentication and authorization systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tools-panel">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">G</div>
+                                <div class="skill-name">Git</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">D</div>
+                                <div class="skill-name">Docker</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">W</div>
+                                <div class="skill-name">Webpack</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">J</div>
+                                <div class="skill-name">Jest</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">V</div>
+                                <div class="skill-name">VS Code</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">F</div>
+                                <div class="skill-name">Figma</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">A</div>
+                                <div class="skill-name">AWS</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">C</div>
+                                <div class="skill-name">CI/CD</div>
+                            </div>
+                        </div>
+                        <div class="tab-description">
+                            <h3>Tools & Methodologies</h3>
+                            <p>I leverage a variety of tools and development methodologies to streamline the development process, ensure code quality, and facilitate collaboration with other team members.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind or want to chat? I'm just a message away.</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out through any of these channels</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your-email@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Social Links</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <p>I'll get back to you as soon as possible</p>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    <p>© 2025 Your Name. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
