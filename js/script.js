@@ -1,13 +1,13 @@
-// Wait for the DOM to be fully loaded
+// Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile navigation menu toggle
+    // Alternar el menú de navegación móvil
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
     menuToggle.addEventListener('click', function() {
         navLinks.classList.toggle('active');
 
-        // Change icon based on menu state
+        // Cambiar el icono según el estado del menú
         const icon = menuToggle.querySelector('i');
         if (navLinks.classList.contains('active')) {
             icon.classList.remove('fa-bars');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Close mobile menu when clicking on a nav link
+    // Cerrar el menú móvil al hacer clic en un enlace de navegación
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', function() {
             navLinks.classList.remove('active');
@@ -28,69 +28,69 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Skills tabs functionality
+    // Funcionalidad de pestañas en la sección de habilidades
     const tabButtons = document.querySelectorAll('.tab-btn');
 
     tabButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons and panels
+            // Quitar la clase activa de todos los botones y paneles
             tabButtons.forEach(btn => btn.classList.remove('active'));
             document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
 
-            // Add active class to clicked button
+            // Agregar la clase activa al botón seleccionado
             this.classList.add('active');
 
-            // Show the corresponding panel
+            // Mostrar el panel correspondiente
             const tabId = this.getAttribute('data-tab');
             document.getElementById(`${tabId}-panel`).classList.add('active');
         });
     });
 
-    // Form submission with basic validation
+    // Envío de formulario con validación básica
     const contactForm = document.getElementById('contact-form');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // Basic validation
+            // Validación básica
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const message = document.getElementById('message').value.trim();
 
             if (name === '' || email === '' || message === '') {
-                alert('Please fill in all fields');
+                alert('Por favor, completa todos los campos');
                 return;
             }
 
-            // Email validation
+            // Validación de correo electrónico
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address');
+                alert('Por favor, ingresa un correo electrónico válido');
                 return;
             }
 
-            // In a real application, you would send the form data to a server here
-            // For now, we'll just show a success message
-            alert('Thanks for your message! I\'ll get back to you soon.');
+            // En una aplicación real, aquí se enviaría la información al servidor
+            // Por ahora, solo mostramos un mensaje de éxito
+            alert('¡Gracias por tu mensaje! Te responderé pronto.');
             contactForm.reset();
         });
     }
 
-    // Smooth scrolling for anchor links
+    // Desplazamiento suave para enlaces de anclaje
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
 
             const targetId = this.getAttribute('href');
 
-            // Skip if it's just "#"
+            // Evitar desplazamiento si es solo "#"
             if (targetId === '#') return;
 
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                // Calculate header height for offset
+                // Calcular la altura del encabezado para el desplazamiento
                 const headerHeight = document.querySelector('header').offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
@@ -102,11 +102,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Highlight active nav link based on scroll position
+    // Resaltar el enlace activo en la navegación según la posición de desplazamiento
     window.addEventListener('scroll', function() {
         const scrollPosition = window.scrollY;
 
-        // Get all sections
+        // Obtener todas las secciones con ID
         const sections = document.querySelectorAll('section[id]');
 
         sections.forEach(section => {
@@ -115,12 +115,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionId = section.getAttribute('id');
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                // Remove active class from all links
+                // Quitar la clase activa de todos los enlaces
                 document.querySelectorAll('.nav-links a').forEach(link => {
                     link.classList.remove('active');
                 });
 
-                // Add active class to current section link
+                // Agregar la clase activa al enlace de la sección actual
                 const activeLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
                 if (activeLink) {
                     activeLink.classList.add('active');
